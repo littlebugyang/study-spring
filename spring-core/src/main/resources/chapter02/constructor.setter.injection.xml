@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="i20pm" class="org.example.core.chapter02.Phone">
+        <property name="model" value="iFruit 20 Pro Max"/>
+    </bean>
+
+    <bean id="mike" class="org.example.core.chapter02.Human">
+        <constructor-arg ref="i20pm"/>
+    </bean>
+
+</beans>
