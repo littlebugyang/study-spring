@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd
+">
+
+    <context:annotation-config/>
+
+    <bean id="annotationResource" class="org.example.core.chapter03.MainAnnotationResource"/>
+
+    <bean id="hong" class="org.example.core.chapter03.Woman">
+        <constructor-arg value="Xiao Hong"/>
+    </bean>
+
+    <bean id="pen" class="org.example.core.chapter03.Pen">
+        <constructor-arg value="Hero"/>
+    </bean>
+
+    <bean id="para1" class="org.example.core.chapter03.Letter">
+        <constructor-arg value="This is paragraph 1. "/>
+    </bean>
+
+    <bean id="para2" class="org.example.core.chapter03.Letter">
+        <constructor-arg value="This is paragraph 2. "/>
+    </bean>
+
+</beans>
